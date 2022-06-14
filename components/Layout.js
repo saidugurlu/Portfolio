@@ -3,16 +3,18 @@ import React from "react";
 
 const Layout = ({ title, description, children }) => {
   return (
-    <div>
+    <>
       {" "}
       <Head>
         <title>{title}</title>
-        <meta name="description" content="description" />
-        <meta property="og:site_name" content="description" />
+        <meta name="description" content={description} />
+        <meta property="og:site_name" content="Portfolio" />
+        <meta property="og:description" content="{description}" />
+        <meta property="og:title" content="{title}" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      {children}
-    </div>
+      <div>{children}</div>
+    </>
   );
 };
 
