@@ -19,9 +19,9 @@ module.exports = {
         "primary-light": "#f8f8f8",
         "primary-dark": "#191919",
         pinkish: {
-          100: "#edb5f5",
-          200: "#eb7ad4",
-          300: "#e86ed0",
+          100: "#ef7674",
+          200: "#ec5766",
+          300: "#da344d",
         },
         blueish: {
           100: "#e6f8f9",

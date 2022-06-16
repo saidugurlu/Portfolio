@@ -3,19 +3,36 @@ import Layout from "../components/Layout";
 import { motion } from "framer-motion";
 import Typical from "react-typical";
 import { memo } from "react";
- 
+import GitHubIcon from "../components/icons/GithubIcon";
+import LinkedinIcon from "../components/icons/LinkedinIcon";
+import EmailIcon from "../components/icons/EmailIcon";
 
-const TypingAnimation =  memo( function  TypingAnimation () {
+const TypingAnimation = memo(
+  function TypingAnimation() {
     return (
       <Typical
         loop={3}
         wrapper="p"
         steps={[
-          "React Developer",
+          "TypeScript",
           2000,
-          "React Enthusiast",
+          "JavaScript",
           2000,
-          "Youtuber 👑",
+          "React.js",
+          2000,
+          "Next.js",
+          2000,
+          "HTML",
+          2000,
+          "Sass",
+          2000,
+          "CSS",
+          2000,
+          "Bootstrap",
+          2000,
+          "Tailwind CSS",
+          2000,
+          "Semantic UI",
           2000,
         ]}
       />
@@ -52,8 +69,43 @@ export default function Home() {
             <h1 className="mt-5 text-xl font-extrabold tracking-normal text-gray-800 uppercase md:text-4xl md:mt-3 dark:text-white">
               M. Said Ugurlu
             </h1>
-            <div className="mt-5 text-2xl font-normal text-transparent bg-gradient-to-r from-pink-500 via-indigo-400 to-purple-700 bg-clip-text md:mt-3">
+            <div className="mt-5 text-2xl font-semibold-light text-transparent bg-gradient-to-r from-pink-500 via-indigo-400 to-purple-700 bg-clip-text md:mt-3">
               <TypingAnimation />
+            </div>
+
+            {/* Social Accounts */}
+            <div className="flex items-center mt-8 space-x-6 md:mt-4">
+              <motion.a
+                href="https://github.com/saidugurlu"
+                target={"_blank"}
+                rel="noopener noreferrer"
+                //Noopener, web sitenizin güvenliğini artırmak ve diğer web sitelerinin sayfanıza erişim sağlamasını önlemek için gereklidir (tarayıcı oturumu aracılığıyla).
+                //Noreferrer, yönlendirme bilgilerinin hedef web sitesine aktarılmasını önlemek için kullanılır ve bu aynı zamanda Google analitikteki yönlendirme trafiğini de gizler.
+                className="flex items-center justify-center text-gray-800 transition-colors duration-300 dark:text-gray-100 dark:hover:text-pinkish-200 hover:text-pinkish-200"
+                whileHover={{ scale: 1.1 }}
+              >
+                <GitHubIcon className={"w-8 h-8 fill-current"} />
+              </motion.a>
+
+              <motion.a
+                href="mailto:ugurlumsaid@gmx.de"
+                target={"_blank"}
+                rel="noopener noreferrer"
+                className="flex items-center justify-center text-gray-800 transition-colors duration-300 dark:text-gray-100 dark:hover:text-pinkish-200 hover:text-pinkish-200"
+                whileHover={{ scale: 1.1 }}
+              >
+                <EmailIcon className={"w-8 h-8 fill-current"} />
+              </motion.a>
+
+              <motion.a
+                href="https://www.linkedin.com/in/ugurlumsaid/"
+                target={"_blank"}
+                rel="noopener noreferrer"
+                className="flex items-center justify-center text-gray-800 transition-colors duration-300 dark:text-gray-100 dark:hover:text-pinkish-200 hover:text-pinkish-200"
+                whileHover={{ scale: 1.1 }}
+              >
+                <LinkedinIcon className={"w-8 h-8 fill-current"} />
+              </motion.a>
             </div>
           </div>
         </section>
