@@ -21,8 +21,8 @@ export default function Home() {
         drag
         dragConstraints={{ top: 0, left: 0, right: 0, bottom: 0 }}
       />
-      <main>
-        <h1 className="text-red-500">hello world</h1>
+      <main className="w-full h-full">
+        <h1 className="text-red-500 dark:text-gray-800">hello world</h1>
       </main>
     </Layout>
   );
