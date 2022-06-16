@@ -24,9 +24,7 @@ export default function Home() {
       <main className="w-full h-full">
         <section className="h-full max-w-5xl mx-auto pt-16 md:pt-8">
           <div className="flex flex-col items-center justify-center md:items-start">
-            <h4 className="text-lg text-gray-800 dark:text-white">
-              <span className="text-xl font-normal">Hello,</span> I'm
-            </h4>
+            <h4 className="text-lg text-gray-800 dark:text-white"><span className="text-xl font-normal">Hello,</span>I&rsquo;m</h4>
             <h1 className="mt-5 text-xl font-extrabold tracking-normal text-gray-800 uppercase md:text-4xl md:mt-3 dark:text-white">
               M. Said Ugurlu
             </h1>
