@@ -1,3 +1,5 @@
+/* eslint-disable react/jsx-no-comment-textnodes */
+/* eslint-disable react/no-unescaped-entities */
 /* eslint-disable @next/next/no-img-element */
 import Layout from "../components/Layout";
 import { motion } from "framer-motion";
@@ -6,6 +8,7 @@ import { memo } from "react";
 import GitHubIcon from "../components/icons/GithubIcon";
 import LinkedinIcon from "../components/icons/LinkedinIcon";
 import EmailIcon from "../components/icons/EmailIcon";
+import Link from "next/link";
 
 const TypingAnimation = memo(
   function TypingAnimation() {
@@ -108,6 +111,63 @@ export default function Home() {
               </motion.a>
             </div>
           </div>
+
+          {/* Code Area */}
+          <article className="mt-3 prose md:mt-4 md:prose-lg dark:prose-dark ">
+            <div>
+              <pre>
+                <code className="language-js">
+                  <div className="flex items-center py-0 my-0 space-x-4 text-gray-500">
+                    <span>// Portfolio.js </span>
+                  </div>
+                  <p>
+                    <span className="text-gray-500">//</span>
+                    <span className="text-green-300"> Todo:</span> <span className="text-gray-500">You can drag
+                    these balloons, I'm sure it'll be easy with</span> <span className="font-bold text-yellow-300">TypeScript
+                    </span>
+                    🎈🎈
+                  </p>
+
+                  <div className="flex items-center space-x-4">
+                    <img
+                      src="/images/kendiFotomProfil.jpeg"
+                      alt="Me"
+                      className="w-10 h-10 rounded-full"
+                    />
+
+                    <div className="">
+                      <p className="text-sm">
+                        <span className="text-pink-300"> {">"} </span> const
+                        <span className="font-bold text-pink-300"> client</span>
+                        _side = ["Reactjs", "Nextjs", "JavaScript", "HTML5"];
+                      </p>
+                      <p className="text-sm">
+                        <span className="text-pink-300"> {">"} </span> const
+                        <span className="font-bold text-pink-300"> client</span>
+                        _more = ["CSS3", "SASS", "Bootstrap", "TailwindCSS",
+                        "SemanticUI"];
+                      </p>
+                      <div className="flex items-center py-0 my-0 space-x-4 text-gray-500">
+                          <span>// currently learning </span>
+                        </div>
+                      <p className="text-sm">
+                        <span className="text-pink-300"> {">"} </span> const
+                        <span className="font-bold text-pink-300"> server</span>
+                        _side = ["Node JS", "Express JS", "Mongo DB"];{" "}
+                    
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex items-center">
+                    <Link href="/projects">
+                      <a className="transition duration-300">Projects</a>
+                    </Link>
+
+                  </div>
+                </code>
+              </pre>
+            </div>
+          </article>
         </section>
       </main>
     </Layout>
