@@ -49,7 +49,7 @@ export default function Home() {
     <Layout title="Portfolio" description={"My Portfolio"}>
       <motion.img
         src="/images/ball-1.svg"
-        className="hidden md:block h-auto absolute top-48 right-10 z-{1}"
+        className="hidden md:block h-auto absolute bottom-5 right-48 z-{1}"
         alt="ball-img"
         whileHover={{ y: -10, rotate: 90, transition: { duration: 0.4 } }}
         drag
@@ -57,7 +57,7 @@ export default function Home() {
       />
       <motion.img
         src="/images/ball-2.svg"
-        className="hidden md:block h-auto absolute bottom-10 left-10 z-{1}"
+        className="hidden md:block h-auto absolute top-1  left-10 z-{1}"
         alt="ball-img"
         whileHover={{ y: -10, rotate: 90, transition: { duration: 0.4 } }}
         drag
@@ -144,7 +144,7 @@ export default function Home() {
                       <p className="text-sm">
                         <span className="text-pink-300"> {">"} </span> const
                         <span className="font-bold text-pink-300"> client</span>
-                        _more = ["CSS3", "SASS", "Bootstrap", "TailwindCSS",
+                        _more = ["CSS", "SASS", "Bootstrap", "TailwindCSS",
                         "SemanticUI"];
                       </p>
                       <div className="flex items-center py-0 my-0 space-x-4 text-gray-500">
@@ -154,7 +154,6 @@ export default function Home() {
                         <span className="text-pink-300"> {">"} </span> const
                         <span className="font-bold text-pink-300"> server</span>
                         _side = ["Node JS", "Express JS", "Mongo DB"];{" "}
-                    
                       </p>
                     </div>
                   </div>
