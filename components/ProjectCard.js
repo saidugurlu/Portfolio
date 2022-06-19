@@ -1,6 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
 import { motion } from "framer-motion";
+import GithubIcon from "./icons/GithubIcon";
+import LinkIcon from "./icons/LinkIcon";
 
 const ProjectCard = ({
   project: { title, description, image, source, tags, demo },
@@ -23,6 +25,26 @@ const ProjectCard = ({
           <h2 className="text-2xl font-semibold text-gray-900 dark:text-gray-100">
             {title}
           </h2>
+          <div className="flex items-center space-x-4">
+            <motion.a
+              href={source}
+              target={"_blank"}
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center px-2 py-1 transition-colors duration-300 dark:text-gray-100 dark:hover:text-pink-700 hover:text-pink-700 hover:cursor-pointer"
+              whileHover={{ scale: 1.1 }}
+            >
+              <GithubIcon className={"w-7 h-7 fill-current"} />
+            </motion.a>
+            <motion.a
+              href={demo}
+              target={"_blank"}
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center px-2 py-1 transition-colors duration-300 dark:text-gray-100 dark:hover:text-pink-700 hover:text-pink-700 hover:cursor-pointer"
+              whileHover={{ scale: 1.1 }}
+            >
+              <LinkIcon className={"w-7 h-7 fill-current"} />
+            </motion.a>
+          </div>
           <p className="text-md">{description}</p>
 
           <div className="flex items-center space-x-4">

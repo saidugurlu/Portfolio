@@ -46,7 +46,7 @@ const TypingAnimation = memo(
 
 export default function Home() {
   return (
-    <Layout title="Portfolio" description={"My Portfolio"}>
+    <Layout title="Portfolio | M.Said Ugurlu" description={"My Portfolio"}>
       <motion.img
         src="/images/ball-1.svg"
         className="hidden md:block h-auto absolute bottom-5 right-48 z-{1}"

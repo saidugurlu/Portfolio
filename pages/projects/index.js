@@ -6,7 +6,7 @@ import ProjectCard from "../../components/ProjectCard";
 import { getAllProjects } from "../../function/getAllProjects";
 
 const ProjectsPage = ({projects}) => {
-  console.log(projects);
+  //console.log(projects);
   return (
     <Layout title={"Portfolio | Projects"} description={"My Projects"}>
       <section className="h-full max-w-5xl pt-4 mx-auto mb-16 md:pt-16">
