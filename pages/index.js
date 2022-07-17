@@ -153,7 +153,7 @@ export default function Home() {
                       <p className="text-sm">
                         <span className="text-pink-300"> {">"} </span> const
                         <span className="font-bold text-pink-300"> server</span>
-                        _side = ["Node JS", "Express JS", "Mongo DB"];{" "}
+                        _side = ["Node JS", "Express JS", "Mongo DB", "SQLite"];{" "}
                       </p>
                     </div>
                   </div>
