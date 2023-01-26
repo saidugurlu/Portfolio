@@ -139,7 +139,7 @@ export default function Home() {
                       <p className="text-sm">
                         <span className="text-pink-300"> {">"} </span> const
                         <span className="font-bold text-pink-300"> client</span>
-                        _side = ["Reactjs", "Nextjs", "JavaScript", "HTML5"];
+                        _side = ["Reactjs", "Angular", "Nextjs", "JavaScript", "TypeScript", "HTML5"];
                       </p>
                       <p className="text-sm">
                         <span className="text-pink-300"> {">"} </span> const
